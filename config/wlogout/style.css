@@ -1,49 +1,42 @@
-/* ----------- 💫 https://github.com/LinuxBeginnings 💫 -------- */
-/* wallust-wlogout */
-
-/* Importing wallust colors */
+/* Importing wallust colors — matches Rofi color palette */
 @import '../../.config/waybar/wallust/colors-waybar.css';
 
 window {
-    font-size: 24pt;
-    color: @foreground; /* text */
-    background-color: rgba(30, 30, 46, 0.8);
+    font-size: 13pt;
+    font-family: "JetBrainsMono Nerd Font";
+    color: @foreground;
+    background-color: rgba(17, 18, 19, 0.75);
 }
 
 button {
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20%;
-    background-color: rgba(200, 220, 255, 0);
-    animation: gradient_f 10s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    border-radius: 80px;
-	border:0px;
-	outline-style: none;
+    background-position: center 30%;
+    background-size: 26%;
+    background-color: @color0;
+    color: @foreground;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    outline-style: none;
 }
 
 button:focus {
-    background-size: 50%;
-	border: 0px;
-	outline-style: none;
-
+    background-color: @color0;
+    border: 1px solid @color12;
+    outline-style: none;
 }
 
 button:hover {
-    background-color: transparent; 
-    color: @color13;
-    background-size: 50%;
-    margin: 30px;
-    border-radius: 80px;
+    background-color: @color12;
+    color: @background;
+    background-size: 26%;
+    border-radius: 10px;
     outline-style: none;
-	
 }
 
-/* Adjust the size of the icon or content inside the button */
 button span {
-    font-size: 1.2em; /* Increase the font size */
+    font-size: 0.9em;
 }
-
 
 #lock {
     background-image: image(url("./icons/lock.png"));
