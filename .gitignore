@@ -1,0 +1,23 @@
+# Compiled binaries from installer
+config/hypr/scripts/dots-tui
+config/hypr/scripts/dots-tui-*
+
+# Wallust cache / generated output
+config/hypr/wallust/*.cache
+
+# Zsh compiled files
+home/.zcompdump*
+
+# Version markers from installer
+config/hypr/v*
+
+# Hyprland initial boot marker
+config/hypr/.initial_startup_done
+
+# Lock screen image cache
+config/hypr/hyprlock*.png
+
+# Misc
+.DS_Store
+*.swp
+*.swo
