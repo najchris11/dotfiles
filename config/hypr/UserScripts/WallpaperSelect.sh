@@ -136,7 +136,9 @@ apply_image_wallpaper() {
     swww-daemon --format xrgb &
   fi
 
-  swww img -o "$focused_monitor" "$image_path" $SWWW_PARAMS
+  for monitor in $(hyprctl monitors -j | jq -r '.[].name'); do
+    swww img -o "$monitor" "$image_path" $SWWW_PARAMS
+  done
 
   # Run additional scripts (pass the image path to avoid cache race conditions)
   "$SCRIPTSDIR/WallustSwww.sh" "$image_path"

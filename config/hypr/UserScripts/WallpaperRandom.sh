@@ -20,7 +20,10 @@ BEZIER=".43,1.19,1,.4"
 SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION --transition-bezier $BEZIER"
 
 
-swww query || swww-daemon --format xrgb && swww img -o $focused_monitor ${RANDOMPICS} $SWWW_PARAMS
+swww query || swww-daemon --format xrgb
+for monitor in $(hyprctl monitors -j | jq -r '.[].name'); do
+  swww img -o "$monitor" "${RANDOMPICS}" $SWWW_PARAMS
+done
 
 wait $!
 "$SCRIPTSDIR/WallustSwww.sh" &&
