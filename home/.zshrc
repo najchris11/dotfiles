@@ -30,3 +30,4 @@ alias lla='ls -la'
 alias lt='ls --tree'
 
 export PATH="$HOME/.local/bin:$PATH"
+export XDG_DATA_DIRS="${XDG_DATA_DIRS:-/usr/local/share:/usr/share}:/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share"
