@@ -1,0 +1,1 @@
+$if($stricmp(%codec%,DSD),dsd,$if($or($stricmp($substr(%encoder%,0,9),mqaencode),%mqaencoder%),mqa,$if($info(bitspersample),$if($greater($info(bitspersample),16),24bit,16bit),lossy)))/$if($stricmp(%albumartist%,Various Artists),Compilations,%album artist%)/%album% '('%media%')'/$num(%tracknumber%,2). %title%
