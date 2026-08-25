@@ -36,7 +36,7 @@ backup_and_link "$DOTFILES/home/.gitconfig" "$HOME/.gitconfig"
 
 echo ""
 echo "[config]"
-for dir in hypr waybar rofi ags swaync kitty ghostty fastfetch btop wallust wlogout qt5ct qt6ct Kvantum cava swappy wezterm; do
+for dir in hypr waybar rofi ags swaync kitty ghostty fastfetch btop wallust wlogout qt5ct qt6ct Kvantum cava swappy wezterm Thunar nwg-displays; do
     backup_and_link "$DOTFILES/config/$dir" "$HOME/.config/$dir"
 done
 
