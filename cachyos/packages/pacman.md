@@ -1,10 +1,23 @@
 # Packages (pacman)
 
-Curated list of explicitly-installed, non-default software on this machine —
-the pacman equivalent of `../../windows/packages/winget-export.json`. Not an
-automated export (pacman doesn't have winget's clean "user-installed" concept
-without noise from base/dependency packages) — just a hand-kept log so a
-reinstall doesn't mean re-remembering everything from scratch.
+`shelly` (already installed on this machine — `cachyos/shelly`, a unified
+Arch/AUR/Flatpak/AppImage package manager, GUI at `shelly-ui`) has its own
+export/import built in and is the real source of truth going forward:
+
+```bash
+shelly backup --export -a pacman -d packages/     # writes packages/pacman.toml
+shelly backup --import -a pacman -d packages/     # reinstalls everything from it, on a fresh box
+```
+
+Regenerate `pacman.toml` after installing anything on purpose and commit it —
+that's the actual machine-readable equivalent of
+`../../windows/packages/winget-export.json`. The table below is a hand-kept
+snapshot from before `shelly` was in the loop; keep it updated too since it's
+more skimmable, but `pacman.toml` (once exported) is authoritative.
+
+`shelly` also removes the "needs an AUR helper" decision entirely —
+`shelly install aur <pkg>` handles AUR packages the same as
+`shelly install standard <pkg>` handles repo ones, no separate paru/yay setup.
 
 ## Installed
 
@@ -17,16 +30,18 @@ reinstall doesn't mean re-remembering everything from scratch.
 | `feishin` | extra | Music client |
 | `cachyos-gaming-meta` | cachyos | Proton-CachyOS/Wine-CachyOS/Vulkan gaming dependency bundle |
 | `steam` | multilib | Steam (not pulled in by `cachyos-gaming-meta` itself, installed alongside it) |
+| `android-studio` | AUR | Via `shelly install aur`, no separate AUR helper needed |
 
 ```bash
-sudo pacman -S lsd code prismlauncher legcord feishin cachyos-gaming-meta steam
+shelly install standard code prismlauncher legcord feishin cachyos-gaming-meta steam
+shelly install aur android-studio
 ```
 
-## Needs an AUR helper (not yet decided)
-
-- `android-studio` — not in the official or CachyOS repos, AUR only. No AUR
-  helper (`paru`/`yay`) installed on this machine yet — that's its own
-  decision (building/trusting an AUR helper) before this can be added.
+Android Studio itself is managed through **JetBrains Toolbox**
+(jetbrains.com/toolbox — official self-contained download, no package
+manager) rather than the bare `android-studio` package, so Toolbox handles
+IDE updates. `shelly install aur android-studio` above is the fallback if
+Toolbox isn't wanted.
 
 ## Keeping this list honest
 
