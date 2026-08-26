@@ -70,9 +70,6 @@
 					"PackageIdentifier" : "Apple.iTunes"
 				},
 				{
-					"PackageIdentifier" : "Apple.QuickTime"
-				},
-				{
 					"PackageIdentifier" : "Apple.AppleMobileDeviceSupport"
 				},
 				{
@@ -112,9 +109,6 @@
 					"PackageIdentifier" : "CrystalDewWorld.CrystalDiskMark"
 				},
 				{
-					"PackageIdentifier" : "REALiX.HWiNFO"
-				},
-				{
 					"PackageIdentifier" : "AntibodySoftware.WizTree"
 				},
 				{
@@ -134,9 +128,6 @@
 				},
 				{
 					"PackageIdentifier" : "MSI.MSICenter"
-				},
-				{
-					"PackageIdentifier" : "Dell.DisplayAndPeripheralManager"
 				}
 			],
 			"SourceDetails" :
