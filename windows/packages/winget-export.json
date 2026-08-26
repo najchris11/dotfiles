@@ -1,13 +1,106 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
 	"CreationDate" : "2026-08-25T17:22:29.327-00:00",
-	"Sources" : 
+	"Sources" :
 	[
 		{
-			"Packages" : 
+			"Packages" :
 			[
 				{
+					"PackageIdentifier" : "Git.Git"
+				},
+				{
 					"PackageIdentifier" : "CoreyButler.NVMforWindows"
+				},
+				{
+					"PackageIdentifier" : "Python.Python.3.12"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier" : "GitHub.cli"
+				},
+				{
+					"PackageIdentifier" : "GitHub.GitHubDesktop"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Office"
+				},
+				{
+					"PackageIdentifier" : "Zoom.Zoom"
+				},
+				{
+					"PackageIdentifier" : "Readdle.Spark"
+				},
+				{
+					"PackageIdentifier" : "Nextcloud.NextcloudDesktop"
+				},
+				{
+					"PackageIdentifier" : "PeterPawlowski.foobar2000"
+				},
+				{
+					"PackageIdentifier" : "VideoLAN.VLC"
+				},
+				{
+					"PackageIdentifier" : "Spotify.Spotify"
+				},
+				{
+					"PackageIdentifier" : "Plex.Plexamp"
+				},
+				{
+					"PackageIdentifier" : "KDE.Krita"
+				},
+				{
+					"PackageIdentifier" : "HandBrake.HandBrake"
+				},
+				{
+					"PackageIdentifier" : "Gyan.FFmpeg"
+				},
+				{
+					"PackageIdentifier" : "MusicBrainz.Picard"
+				},
+				{
+					"PackageIdentifier" : "OliverBetz.ExifTool"
+				},
+				{
+					"PackageIdentifier" : "OBSProject.OBSStudio"
+				},
+				{
+					"PackageIdentifier" : "Apple.iTunes"
+				},
+				{
+					"PackageIdentifier" : "Apple.QuickTime"
+				},
+				{
+					"PackageIdentifier" : "Apple.AppleMobileDeviceSupport"
+				},
+				{
+					"PackageIdentifier" : "Apple.AppleApplicationSupport.x86"
+				},
+				{
+					"PackageIdentifier" : "Apple.AppleSoftwareUpdate"
+				},
+				{
+					"PackageIdentifier" : "Apple.Bonjour"
+				},
+				{
+					"PackageIdentifier" : "Valve.Steam"
+				},
+				{
+					"PackageIdentifier" : "RockstarGames.Launcher"
+				},
+				{
+					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
+				},
+				{
+					"PackageIdentifier" : "EpicGames.EpicOnlineServices"
+				},
+				{
+					"PackageIdentifier" : "PrismLauncher.PrismLauncher"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.GameInput"
 				},
 				{
 					"PackageIdentifier" : "7zip.7zip"
@@ -19,244 +112,34 @@
 					"PackageIdentifier" : "CrystalDewWorld.CrystalDiskMark"
 				},
 				{
-					"PackageIdentifier" : "Git.Git"
-				},
-				{
 					"PackageIdentifier" : "REALiX.HWiNFO"
-				},
-				{
-					"PackageIdentifier" : "KDE.Krita"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Office"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.OneDrive"
-				},
-				{
-					"PackageIdentifier" : "PostgreSQL.PostgreSQL.17"
-				},
-				{
-					"PackageIdentifier" : "VideoLAN.VLC"
-				},
-				{
-					"PackageIdentifier" : "Wacom.WacomTabletDriver"
 				},
 				{
 					"PackageIdentifier" : "AntibodySoftware.WizTree"
 				},
 				{
-					"PackageIdentifier" : "PeterPawlowski.foobar2000"
-				},
-				{
-					"PackageIdentifier" : "OpenJS.NodeJS.22"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.GameInput"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2010.x64"
-				},
-				{
-					"PackageIdentifier" : "Zoom.Zoom"
-				},
-				{
-					"PackageIdentifier" : "Google.Chrome"
-				},
-				{
 					"PackageIdentifier" : "PrivateInternetAccess.PrivateInternetAccess"
-				},
-				{
-					"PackageIdentifier" : "PuTTY.PuTTY"
-				},
-				{
-					"PackageIdentifier" : "Apple.Bonjour"
-				},
-				{
-					"PackageIdentifier" : "RevoUninstaller.RevoUninstallerPro"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2005.x64"
-				},
-				{
-					"PackageIdentifier" : "Logitech.OptionsPlus"
-				},
-				{
-					"PackageIdentifier" : "GitHub.cli"
-				},
-				{
-					"PackageIdentifier" : "Nextcloud.NextcloudDesktop"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VisualStudioCode"
-				},
-				{
-					"PackageIdentifier" : "Apple.AppleMobileDeviceSupport"
-				},
-				{
-					"PackageIdentifier" : "Apple.iTunes"
-				},
-				{
-					"PackageIdentifier" : "HandBrake.HandBrake"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Edge"
-				},
-				{
-					"PackageIdentifier" : "MusicBrainz.Picard"
 				},
 				{
 					"PackageIdentifier" : "Notepad++.Notepad++"
 				},
 				{
-					"PackageIdentifier" : "OBSProject.OBSStudio"
+					"PackageIdentifier" : "Olivia.VIA"
 				},
 				{
-					"PackageIdentifier" : "RockstarGames.Launcher"
+					"PackageIdentifier" : "Wacom.WacomTabletDriver"
 				},
 				{
-					"PackageIdentifier" : "Valve.Steam"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2013.x64"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
-				},
-				{
-					"PackageIdentifier" : "Apple.QuickTime"
+					"PackageIdentifier" : "Logitech.OptionsPlus"
 				},
 				{
 					"PackageIdentifier" : "MSI.MSICenter"
 				},
 				{
 					"PackageIdentifier" : "Dell.DisplayAndPeripheralManager"
-				},
-				{
-					"PackageIdentifier" : "Apple.AppleApplicationSupport.x86"
-				},
-				{
-					"PackageIdentifier" : "EpicGames.EpicOnlineServices"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2013.x86"
-				},
-				{
-					"PackageIdentifier" : "Apple.AppleSoftwareUpdate"
-				},
-				{
-					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2010.x86"
-				},
-				{
-					"PackageIdentifier" : "Python.Launcher"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.8"
-				},
-				{
-					"PackageIdentifier" : "Readdle.Spark"
-				},
-				{
-					"PackageIdentifier" : "Plex.Plexamp"
-				},
-				{
-					"PackageIdentifier" : "Olivia.VIA"
-				},
-				{
-					"PackageIdentifier" : "OliverBetz.ExifTool"
-				},
-				{
-					"PackageIdentifier" : "GitHub.GitHubDesktop"
-				},
-				{
-					"PackageIdentifier" : "Gyan.FFmpeg"
-				},
-				{
-					"PackageIdentifier" : "PrismLauncher.PrismLauncher"
-				},
-				{
-					"PackageIdentifier" : "RaspberryPiFoundation.RaspberryPiImager"
-				},
-				{
-					"PackageIdentifier" : "Spotify.Spotify"
-				},
-				{
-					"PackageIdentifier" : "Python.Python.3.12"
-				},
-				{
-					"PackageIdentifier" : "Python.Python.3.11"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Teams"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.AppInstaller"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DirectX"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.DotNet.Native.Runtime"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Outlook"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.UI.Xaml.2.6"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.UI.Xaml.2.7"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.UI.Xaml.2.8"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCLibs.Desktop.14"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCLibs.14"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.2"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.3"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.4"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.5"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.6"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.7"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.8"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.2"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsTerminal"
-				},
-				{
-					"PackageIdentifier" : "TheBrowserCompany.Arc"
 				}
 			],
-			"SourceDetails" : 
+			"SourceDetails" :
 			{
 				"Argument" : "https://cdn.winget.microsoft.com/cache",
 				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
@@ -265,13 +148,13 @@
 			}
 		},
 		{
-			"Packages" : 
+			"Packages" :
 			[
 				{
 					"PackageIdentifier" : "XPFM2K6GPV72CR"
 				}
 			],
-			"SourceDetails" : 
+			"SourceDetails" :
 			{
 				"Argument" : "https://storeedgefd.dsx.mp.microsoft.com/v9.0",
 				"Identifier" : "StoreEdgeFD",
