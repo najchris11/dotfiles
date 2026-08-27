@@ -171,6 +171,7 @@ standard = [
   "unzip",
   "upower",
   "usb_modeswitch",
+  "usbmuxd",
   "usbutils",
   "vim",
   "vlc-plugins-all",

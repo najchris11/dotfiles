@@ -35,9 +35,10 @@ more skimmable, but `pacman.toml` (once exported) is authoritative.
 | `thunar-volman` | extra | Auto-mount/auto-open prompts for removable media in Thunar |
 | `gvfs` | extra | Virtual filesystem backend Thunar needs for network browsing, trash, etc. |
 | `gvfs-smb` | extra | GVFS backend for `smb://` share browsing/mounting in Thunar |
+| `usbmuxd` | extra | USB pairing daemon for iPhone tethering/sync. Starts itself via udev (static service, no `systemctl enable` needed/possible). `ipheth` (USB tether NIC driver) ships in the kernel already, no separate package. Requires Personal Hotspot to already be ON *before* plugging in the cable — the driver won't renegotiate a live cable into carrier-up after the fact, needs a fresh plug for that to take. |
 
 ```bash
-shelly install standard code prismlauncher legcord feishin cachyos-gaming-meta steam thunar thunar-volman gvfs gvfs-smb
+shelly install standard code prismlauncher legcord feishin cachyos-gaming-meta steam thunar thunar-volman gvfs gvfs-smb usbmuxd
 shelly install aur android-studio
 ```
 
