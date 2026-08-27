@@ -31,9 +31,13 @@ more skimmable, but `pacman.toml` (once exported) is authoritative.
 | `cachyos-gaming-meta` | cachyos | Proton-CachyOS/Wine-CachyOS/Vulkan gaming dependency bundle |
 | `steam` | multilib | Steam (not pulled in by `cachyos-gaming-meta` itself, installed alongside it) |
 | `android-studio` | AUR | Via `shelly install aur`, no separate AUR helper needed |
+| `thunar` | extra | Default file manager (replaced `dolphin`) |
+| `thunar-volman` | extra | Auto-mount/auto-open prompts for removable media in Thunar |
+| `gvfs` | extra | Virtual filesystem backend Thunar needs for network browsing, trash, etc. |
+| `gvfs-smb` | extra | GVFS backend for `smb://` share browsing/mounting in Thunar |
 
 ```bash
-shelly install standard code prismlauncher legcord feishin cachyos-gaming-meta steam
+shelly install standard code prismlauncher legcord feishin cachyos-gaming-meta steam thunar thunar-volman gvfs gvfs-smb
 shelly install aur android-studio
 ```
 
